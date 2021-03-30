@@ -1,0 +1,292 @@
+/* resetting browser stuff */
+*     {
+  box-sizing: border-box;
+}
+html,
+body   {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+  margin: 0;
+  background: #222;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  line-height: 1.5;
+}
+html {
+  scroll-behavior: smooth;
+}
+.SmartHelmet,.flaskPython,.Bookstore,.op,.Hardware,.Software{
+  color: dodgerblue;
+}
+
+.BookstoreDuration,.flaskPythonDuratiion,.SmartHelmetDuration{
+  color: tomato;
+}
+.ach,.eduT,.expTitle{
+  color:gold;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+a{
+  color: yellow;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 3px;
+
+  position: relative;
+}
+
+#hashLink {
+    display: none;
+}
+
+#hashLink:target {
+    display: block;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav     {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+/* styling our overall page */
+
+body     {
+  background: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* styling our header */
+header   {
+  background: #222;
+  color: #FFF;
+  padding: 20px 30px;
+  min-height: 400px;
+  text-align: center ;
+  background-image: url('../images/comp.gif');
+  background-size: cover;
+
+
+
+}
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+  /*overflow: hidden;*/
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,1);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+             color: black;
+}
+img {
+  border: 7px solid #555;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+#title,#subtitle {
+  background-color: #ff9800;
+  padding: 10px;
+
+}
+#subt{
+  color:red;
+}
+
+
+.hero {
+  min-height: 400px;
+  text-align: center;
+  background-image: url('../images/comp.gif');
+  background-size: cover;
+}
+.hero-content   {
+  color: red;
+  padding-top: 50px;
+}
+.hero-content h1   {
+  font-size: 100px;
+  margin: 0;
+}
+.hero-content p    {
+  font-size: 50px;
+}
+.hero-content a    {
+  display: inline-block;
+  color: gray;
+  border: 3px solid red;
+  border-radius: 20px;
+  padding: 15px 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 28px;
+  background-color: yellow;
+}
+.site-section   {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.site-section-inside   {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* testimonial boxes */
+.testimonial-box   {
+  display: inline-block;
+  width: 50%;
+  padding: 20px 10px;
+}
+.testimonial-content   {
+  background: #FFF;
+  padding: 15px;
+  border-radius: 44px;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 50px;
+  overflow: hidden;
+}
+.content-wrap img {
+  width: 200px;
+  height: 200px;
+}
+footer {
+  background: #014b5f;
+  color: #dddddd;
+}
+.education {
+  background: linear-gradient(rgba(120, 120, 120, 0.8), rgba(100, 100, 100, 0.8)),
+              url(../images/amritapuri.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.education1 {
+  background: linear-gradient(rgba(20, 12, 20, 0.8), rgba(30, 30, 30, 0.8)),
+              url(../images/sam.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.education2 {
+  background: linear-gradient(rgba(20, 12, 20, 0.8), rgba(30, 30, 30, 0.8)),
+              url(../images/sam3.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.education3 {
+  background: linear-gradient(rgba(20, 12, 20, 0.8), rgba(30, 30, 30, 0.8)),
+              url(../images/sam1.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.education4 {
+  background: linear-gradient(rgba(20, 12, 20, 0.8), rgba(30, 30, 30, 0.8)),
+              url(../images/sam.png) no-repeat fixed;
+  background-size: cover;
+}
+.education5 {
+  background: linear-gradient(rgba(20, 12, 20, 0.8), rgba(30, 30, 30, 0.8)),
+              url(../images/sam4.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.education6 {
+  background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(40, 40, 40, 0.8)),
+              url(../images/sam5.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.contactb {
+  background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(40, 40, 40, 0.8)),
+              url(../images/contact.jpg) no-repeat fixed;
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 30px;
+}
